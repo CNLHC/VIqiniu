@@ -20,11 +20,12 @@ def Viqiniu_upbload():
     a=qiniu.Auth(ak,sk)
     reobj=re.search("\[!(.*?)\]",linebuf)
     if reobj == None:
-        print "No path detected"
+        print "No formated path detected"
         return 
     else:
         AbsPath=reobj.group(1)
     AbsPath=os.popen("echo %s"%AbsPath).read().replace('\n','')
+	
     os.chdir(os.path.dirname(AbsPath))
     key=os.path.basename(AbsPath)
     token=a.upload_token(Bucket,key)
