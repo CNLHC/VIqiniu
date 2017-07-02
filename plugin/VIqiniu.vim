@@ -7,7 +7,7 @@ import re
 ak=vim.eval("g:VIqiniu_Ak")
 sk=vim.eval("g:VIqiniu_SK")
 Bucket=vim.eval("g:VIqiniu_Bucket")
-Dmain=vim.eval("g:VIqiniu_Domain")
+Domain=vim.eval("g:VIqiniu_Domain")
 def Viqiniu_upbload():
     def get_Currentline():
         po=vim.current.window.cursor
