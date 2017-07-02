@@ -4,8 +4,8 @@ import os
 import qiniu
 from qiniu import *
 import re
-Ak=vim.eval("g:VIqiniu_Ak")
-SK=vim.eval("g:VIqiniu_SK")
+ak=vim.eval("g:VIqiniu_Ak")
+sk=vim.eval("g:VIqiniu_SK")
 Bucket=vim.eval("g:VIqiniu_Bucket")
 Dmain=vim.eval("g:VIqiniu_Domain")
 def Viqiniu_upbload():
